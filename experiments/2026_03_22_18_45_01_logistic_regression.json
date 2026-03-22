@@ -1,0 +1,28 @@
+{
+    "timestamp": "2026_03_22_18_45_01",
+    "model_name": "Logistic Regression",
+    "metrics": {
+        "recall_fatal": 0.7722,
+        "precision_fatal": 0.0475,
+        "f1_fatal": 0.0895,
+        "roc_auc": 0.837,
+        "accuracy": 0.7375,
+        "class_weight": "balanced",
+        "parameters": {
+            "C": 1.0,
+            "class_weight": "balanced",
+            "dual": false,
+            "fit_intercept": true,
+            "intercept_scaling": 1,
+            "l1_ratio": 0.0,
+            "max_iter": 1000,
+            "n_jobs": null,
+            "penalty": "deprecated",
+            "random_state": 42,
+            "solver": "lbfgs",
+            "tol": 0.0001,
+            "verbose": 0,
+            "warm_start": false
+        }
+    }
+}
