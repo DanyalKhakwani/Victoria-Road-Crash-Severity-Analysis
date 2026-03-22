@@ -21,8 +21,8 @@ crash_severity_analysis/
 │
 ├── experiments/                ← JSON logs of every experiment run
 │
-├── research/
-│   └── 01_data_inspection.py   ← EDA and data exploration
+├── eda/                        ← EDA and data exploration
+│      
 │
 ├── artifacts/                  ← generated at runtime, gitignored
 │   ├── raw_data.csv
@@ -41,7 +41,7 @@ crash_severity_analysis/
 
 Victorian government road crash data sourced from VicRoads (2012–2023).
 Raw data consists of 5 CSVs merged into a SQLite database with a relational schema.
-Database schema and cleaning: [link to other repo]
+Database schema and cleaning: https://github.com/DanyalKhakwani/Victorian-Road-Crash-Data
 
 ## Setup
 ```bash
