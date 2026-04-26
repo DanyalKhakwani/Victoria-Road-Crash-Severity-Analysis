@@ -80,6 +80,9 @@ class DataTransformation:
             logger.info("Converting categorical columns to string")
             for col in df.select_dtypes(include='object').columns:
                 df[col] = df[col].astype(str)
+            
+            # Saving the clean data before running model based transformation
+            df.to_csv("artifacts/processed.csv")
 
             # ── Define features and target ────────────────────────────
             target = 'severity'

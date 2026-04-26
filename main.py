@@ -1,6 +1,7 @@
 from src.components.ingest import DataIngestion
 from src.components.transformation import DataTransformation
 from src.components.model_trainer import ModelTrainer
+from src.components.model_trainer_smote import ModelTrainerSMOTE
 
 
 
@@ -17,9 +18,16 @@ if __name__ == "__main__":
     # )
     # transformation.run()
 
-    trainer = ModelTrainer(
+    # trainer = ModelTrainer(
+    #     train_path="artifacts/train.csv",
+    #     test_path="artifacts/test.csv",
+    #     model_output_dir="artifacts"
+    # )
+    # trainer.run()
+
+    trainer_smote = ModelTrainerSMOTE(
         train_path="artifacts/train.csv",
         test_path="artifacts/test.csv",
         model_output_dir="artifacts"
     )
-    trainer.run()
+    trainer_smote.run()

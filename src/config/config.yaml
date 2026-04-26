@@ -1,8 +1,12 @@
 experiment:
-  model: "logistic_regression"
+  model: "gradient_boosting"
   class_weight: "balanced"
   random_state: 42
   max_iter: 1000
-  n_estimators: 100
-  threshold: 0.5
-  drop_columns: []
+  n_estimators: 300
+  threshold: 0.2
+  drop_columns: ["total_persons", "max_vehicle_damage", "total_vehicles", "police_attended"]
+  smote_k_neighbors: 5
+  smote_random_state: 42
+  max_depth: 3
+  learning_rate: 0.05

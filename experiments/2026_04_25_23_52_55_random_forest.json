@@ -1,0 +1,39 @@
+{
+    "timestamp": "2026_04_25_23_52_55",
+    "model_name": "Random Forest",
+    "metrics": {
+        "recall_fatal": 0.0031,
+        "precision_fatal": 0.1538,
+        "f1_fatal": 0.0061,
+        "roc_auc": 0.801,
+        "accuracy": 0.9831,
+        "threshold": 0.5,
+        "dropped_columns": [
+            "total_persons",
+            "max_vehicle_damage",
+            "total_vehicles",
+            "police_attended"
+        ],
+        "parameters": {
+            "bootstrap": true,
+            "ccp_alpha": 0.0,
+            "class_weight": "balanced",
+            "criterion": "gini",
+            "max_depth": null,
+            "max_features": "sqrt",
+            "max_leaf_nodes": null,
+            "max_samples": null,
+            "min_impurity_decrease": 0.0,
+            "min_samples_leaf": 1,
+            "min_samples_split": 2,
+            "min_weight_fraction_leaf": 0.0,
+            "monotonic_cst": null,
+            "n_estimators": 100,
+            "n_jobs": null,
+            "oob_score": false,
+            "random_state": 42,
+            "verbose": 0,
+            "warm_start": false
+        }
+    }
+}
