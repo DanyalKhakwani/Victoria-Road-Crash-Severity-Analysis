@@ -75,7 +75,7 @@ After repeated hyperparameter tuning, the results stay final. I tried to raise p
 
 The right 'mix' of recall vs precision depends on the business question and the cost associated to false positives and false negative. 
 
-The question can be framed: How many false positives (accidents labelled as Fatal but in reality they are not) are we able to tolerate (operational cost wise) to ensure we dont miss a single crash. 
+The question can be framed: How many false positives (accidents labelled as Fatal but in reality they are not) are we able to tolerate (operational cost wise) to ensure we dont miss a single crash?
 
 ## Improvements needed
 - Further feature engineering
