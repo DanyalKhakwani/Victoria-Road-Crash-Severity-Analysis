@@ -59,9 +59,23 @@ py main.py
 | Model               | Recall (Fatal) | Precision (Fatal) | F1 (Fatal) | ROC AUC |
 |---------------------|---------------|-------------------|------------|---------|
 | Logistic Regression | 0.77          | 0.05              | 0.09       | 0.84    |
+| Random Forest       | 0.25          | 0.14              | 0.17       | 0.82    |
+| Gradient Boosting   | 0.80          | 0.05              | 0.11       | 0.85    |
 
 ## Experiment Tracking
 
 All model runs are logged to `experiments/` as JSON files including model parameters,
 metrics, threshold used, and columns dropped. Change `config/config.yaml` to run
 a new experiment without editing any Python files.
+
+## Analysis
+Gradient boosting shows the best results, with a 0.80 recall for fatal crashes. This means the model recognizes fatal crashes 80% of the time. However, there is still an issue of low precision (0.05). This value suggests that out of all the fatal crashes it flagged, 95% were false positives. 
+
+After repeated hyperparameter tuning, the results stay final. I tried to raise precision by sacrificing some recall, but since recognizing fatal crash is more important, the effort was futile. 
+
+The right 'mix' of recall vs precision depends on the business question and the cost associated to false positives and false negative. 
+
+The question can be framed: How many false positives (accidents labelled as Fatal but in reality they are not) are we able to tolerate (operational cost wise) to ensure we dont miss a single crash. 
+
+## Improvements needed
+- Further feature engineering
